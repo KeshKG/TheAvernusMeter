@@ -1,0 +1,224 @@
+:root {
+    --shadow-color: #FF9E9E;
+    --shadow-color-light: black;
+  }
+
+@font-face {
+    font-family: avernus;
+    src: url(/Fonts/Paganini-Light\ Regular.ttf);
+    font-family: scary;
+    src: url(/Fonts/SatanycDemoniacSt-6BAM.ttf);
+  }
+
+body {
+    background-image: url(/Res/Hellbg.jpg);
+    background-size: cover;
+    backdrop-filter: brightness(80%);
+    /* background: grey; */
+    font-family: scary;
+}
+
+.lineCon {
+    margin-top: -2%;
+    margin-bottom: -3%;
+    padding: 10px;
+}
+
+.lines {
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+
+.lines::after, .lines::before {
+    content: '';
+    position: absolute;
+    margin: auto;
+    height: 1.5px;
+    background: #810d0d;
+    
+    width: 50%;
+}
+
+.lines::after {
+    left: 0;
+    margin-top: -0.1%;
+    height: 1.5px;
+}
+
+.lines::before {
+    right: 0;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #810d0d;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+h1 {
+    margin-top: -2.6%;
+    padding-bottom: 0;
+    font-size: 50px;
+    text-align: center;
+    color: #DE1C02;
+    text-shadow: 2px 2px #6B010E;
+    text-shadow: 0 0 1vw #6B010E, 0 0 3vw #6B010E, 0 0 10vw #6B010E, 0 0 10vw #6B010E, 0 0 .4vw #E71E02, 0.28vw 0.3vw .1vw #860111;
+}
+
+h3 {
+    margin-top: -0.25%;
+    font-size: 13px;
+    /* text-align: center; */
+    margin-left: 49.5%;
+    color: #DE1C02;
+    text-shadow: 1.2px 1.2px #6B010E;
+    text-shadow: 0 0 1vw #6B010E, 0 0 3vw #6B010E, 0 0 10vw #6B010E, 0 0 10vw #6B010E, 0 0 .4vw #E71E02, .28vw .2vw .1vw #860111;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 2%;
+    margin-top: -3%;
+    margin-bottom: -0.5%;
+    color: #6B010E;
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  
+}
+
+/* Names */
+.reece {
+    color: lightblue;
+}
+
+/* Meter Div */
+.slidecontainer {
+    padding-top: 0%;
+    padding-bottom: 1%;
+    width: 80%;
+    margin: 0 auto;
+    
+  }
+
+  
+
+  .slidecontainer2 {
+    padding-top: 0%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Meter Bar */
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(173,7,7,1) 21%, 
+    rgba(209,26,26,1) 30%, rgba(50,210,31,1) 50%, 
+    rgba(0,247,252,1) 70%, rgba(0,247,252,1) 80%, 
+    rgba(237,255,105,1) 100%);
+    box-shadow: -2px 8px 6px -5px #fffffe;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  /* Bar Hover */
+  .slider:hover {
+    animation: BarMeter 1s;
+  }
+
+  @keyframes BarMeter {
+    0% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Meter Thumb Image*/
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: gray;
+    background-image: url(/Res/BarThumbImg.png);
+    filter: brightness(175%);
+    background-size: contain;
+    background-position: center;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  
+  .slider2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: gray;
+    background-image: url(/Res/BarThumbImg.png);
+    background-size: contain;
+    background-position: center;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+  /* Meter Thumb */
+  .slider::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: gray;
+    cursor: pointer;
+  }
+
+  /* Labels */
+  .evilLb {
+    margin-top: -0%;
+    padding-top: 0%;
+    color: #FF1C1C;
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px #FF1C1C, 0 0 40px #FF1C1C, 0 0 50px #FF1C1C, 0 0 70px var(--shadow-color), 0 0 100px #FF1C1C, 0 0 200px #FF1C1C;
+  
+  }
+
+  .neutralLb {
+    margin-top: -3%;
+    padding-top: 0%;
+    text-align: center;
+    color: greenyellow;
+  }
+
+  .holyLb {
+    margin-top: -3.9%;
+    padding-top: 0%;
+    text-align: right;
+    color: whitesmoke;
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px rgba(237,255,105,1), 0 0 40px rgba(237,255,105,1), 0 0 50px rgba(237,255,105,1), 0 0 70px rgba(237,255,105,1), 0 0 100px rgba(237,255,105,1), 0 0 200px rgba(237,255,105,1);
+  
+  }

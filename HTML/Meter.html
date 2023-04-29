@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Meter.css" />
+    <title>Avernus Meter</title>
+</head>
+<body>
+
+    <h3>THE</h3>
+    <h1>AVERNUS METER</h1>
+
+    <div class="lineCon">
+        <div class="lines">
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <div class="slidecontainer">
+        <h2 class="reece">Nonce McGee</h2>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <p class="evilLb">EVIL</p>
+        <p class="neutralLb">NEUTRAL</p>
+        <p class="holyLb">HOLY</p>
+    </div>
+
+    <div class="slidecontainer">
+        <h2 class="reece">Terry Flaps</h2>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <p class="evilLb">EVIL</p>
+        <p class="neutralLb">NEUTRAL</p>
+        <p class="holyLb">HOLY</p>
+    </div>
+
+    <div class="slidecontainer">
+        <h2 class="reece">Michelle Iwanna</h2>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <p class="evilLb">EVIL</p>
+        <p class="neutralLb">NEUTRAL</p>
+        <p class="holyLb">HOLY</p>
+    </div>
+
+    <div class="slidecontainer">
+        <h2 class="reece">Tim Genkins</h2>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <p class="evilLb">EVIL</p>
+        <p class="neutralLb">NEUTRAL</p>
+        <p class="holyLb">HOLY</p>
+    </div>
+
+    <div class="slidecontainer">
+        <h2 class="reece">Dennis Rodman</h2>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <p class="evilLb">EVIL</p>
+        <p class="neutralLb">NEUTRAL</p>
+        <p class="holyLb">HOLY</p>
+    </div>
+
+    <div class="slidecontainer">
+        <h2 class="reece">Your Mom</h2>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <p class="evilLb">EVIL</p>
+        <p class="neutralLb">NEUTRAL</p>
+        <p class="holyLb">HOLY</p>
+    </div>
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        </script>     
+</body>
+
+
+</html>
+  
