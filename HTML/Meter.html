@@ -3,8 +3,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Res/Icon.png"/>
     <link rel="stylesheet" href="/CSS/Meter.css" />
+    
     <title>Avernus Meter</title>
+    
 </head>
 <body>
 
@@ -18,62 +21,58 @@
     </div>
 
     <div class="slidecontainer">
-        <h2 class="reece">Nonce McGee</h2>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <h2 class="reece" contenteditable="true" id="slider1-label">Nonce McGee</h2>
+        <input id="myRange1" name="myRange1" type="range" min="1" max="100" value="50" class="slider" >
         <p class="evilLb">EVIL</p>
         <p class="neutralLb">NEUTRAL</p>
         <p class="holyLb">HOLY</p>
     </div>
 
-    <div class="slidecontainer">
+    <div class="slidecontainer" contenteditable="true" id="slider2-label">
         <h2 class="reece">Terry Flaps</h2>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <input id="myRange2" name="myRange2" type="range" min="1" max="100" value="50" class="slider" id="myRange">
         <p class="evilLb">EVIL</p>
         <p class="neutralLb">NEUTRAL</p>
         <p class="holyLb">HOLY</p>
     </div>
 
     <div class="slidecontainer">
-        <h2 class="reece">Michelle Iwanna</h2>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <h2 class="reece" contenteditable="true" id="slider3-label">Michelle Iwanna</h2>
+        <input id="myRange3" name="myRange3" type="range" min="1" max="100" value="50" class="slider" id="myRange">
         <p class="evilLb">EVIL</p>
         <p class="neutralLb">NEUTRAL</p>
         <p class="holyLb">HOLY</p>
     </div>
 
     <div class="slidecontainer">
-        <h2 class="reece">Tim Genkins</h2>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <h2 class="reece" contenteditable="true" id="slider4-label">Tim Genkins</h2>
+        <input id="myRange4" name="myRange4" type="range" min="1" max="100" value="50" class="slider" id="myRange">
         <p class="evilLb">EVIL</p>
         <p class="neutralLb">NEUTRAL</p>
         <p class="holyLb">HOLY</p>
     </div>
 
     <div class="slidecontainer">
-        <h2 class="reece">Dennis Rodman</h2>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <h2 class="reece" contenteditable="true" id="slider5-label">Dennis Rodman</h2>
+        <input id="myRange5" name="myRange5" type="range" min="1" max="100" value="50" class="slider" id="myRange">
         <p class="evilLb">EVIL</p>
         <p class="neutralLb">NEUTRAL</p>
         <p class="holyLb">HOLY</p>
     </div>
 
     <div class="slidecontainer">
-        <h2 class="reece">Your Mom</h2>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <h2 class="reece" contenteditable="true" id="slider6-label">Your Mom</h2>
+        <input id="myRange6" name="myRange6" type="range" min="1" max="100" value="50" class="slider" id="myRange">
         <p class="evilLb">EVIL</p>
         <p class="neutralLb">NEUTRAL</p>
         <p class="holyLb">HOLY</p>
     </div>
 
-    <script>
-        var slider = document.getElementById("myRange");
-        var output = document.getElementById("demo");
-        output.innerHTML = slider.value;
-        
-        slider.oninput = function() {
-          output.innerHTML = this.value;
-        }
-        </script>     
+    <div class="btn">
+        <button class="btndes" id="updateButton"><span>DO IT PUSSY!</span><span>Save Me?</span></button>
+    </div>
+
+    <script src="/JS/Meter.js"></script>     
 </body>
 
 
